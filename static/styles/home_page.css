@@ -1,0 +1,155 @@
+.partition_div{
+    display: block;
+    padding: 10px;
+}
+
+select{
+    border: 1px;
+    height: 30px;
+    margin-right: 15px !important;
+    margin-left: 15px !important;
+}
+
+/*-------------------------------------------------*/
+/* Tab CSS Starts */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tab-content {
+  display: inline;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+/*Tab CSS ends*/
+/*-------------------------------------------------*/
+
+
+/*Chart CSS Starts*/
+.chart {
+  text-align: center;
+  margin: auto;
+}
+
+.row {
+  margin-bottom: 150px;
+}
+
+
+.row-override-css {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-wrap: wrap !important;
+    flex-wrap: wrap !important;
+    margin-right: -100px !important;
+    margin-left: -100px !important;
+    margin-bottom: 10px !important;
+    margin-bottom: 10px !important;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+/*Chart CSS Ends*/
+
+/*Search Tweet Grid CSS starts*/
+.grid-container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+}
+
+.left-child{
+    border-right: dotted 0.5px;
+    padding-right: 20px;
+}
+/*Search Tweet Grid CSS ends*/
+
+.tweet-display-heading, .tweet-analysis-heading{
+  text-align: center;
+}
+
+/*Input tag CSS*/
+.advanced-search-class{
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.tweet-data-div{
+    border-top: dotted 0.5px;
+    margin: 10px;
+    padding-top: 5px;
+}
+
+.margin_unset{
+    border-top: unset !important;
+}
+
+.tweet-data-div span {
+    display: block;
+}
+
+.next-button-div{
+    float: right;
+}
+
+#next-page{
+    color: #1e90ff;
+    border: #1e90ff;
+    background: transparent;
+}
+
+.page-div{
+    float: left;
+    margin: 10px;
+    color: #1e90ff;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.hidden{
+    display: none;
+}
+
+span.positive{
+    color: #32CD32;
+}
+span.negative{
+    color: #FF0000;
+}
+span.neutral{
+    color: #FFA500;
+}
+.twitter-blue{
+    color: #1DA1F2;
+}

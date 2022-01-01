@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/home_page.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+<body>
+
+<div class="tab">
+    <button id="search-tweets-tab">Home</button>
+    <button id="analysis-tab">Analysis</button>
+</div>
+
+<div class="tab-content" id="search-tweets-div">
+    <div class='partition_div' id="input-values-div">
+        <input type="text" id="query_input_box" name="query_input_box" placeholder="Search Tweets">
+
+        <div class="advanced-search-class"><b>Advanced Search : </b></div>
+        <!--        <label for="poi_dropdown">Select a POI:</label>-->
+        <select name="poi_dropdown" id="poi_dropdown">
+            <option disabled selected value> -- Select a POI --</option>
+        </select>
+
+        <!--        <label for="country_dropdown">Select a Country:</label>-->
+        <select name="country_dropdown" id="country_dropdown">
+            <option disabled selected value> -- Select a Country --</option>
+        </select>
+
+        <!--        <label for="language_dropdown">Select a Language:</label>-->
+        <select name="language_dropdown" id="language_dropdown">
+            <option disabled selected value> -- Select a Language --</option>
+        </select>
+    </div>
+
+    <div class='partition_div' id="search-area-div">
+        <button id="search-tweets">Search Tweets</button>
+    </div>
+
+    <div class='partition_div grid-container tweet-data hidden' id="tweet-display-div">
+        <div id="tweet-display" class="tweet-display grid-child">
+            <div class="tweet-display-heading ">
+                <b>Tweet Search Results</b>
+            </div>
+            <div class="tweet-display-data" id="tweet-display-data"></div>
+            <div id="tweet-display-bottom-div">
+                <div id="page-id" class="page-div bold"></div>
+                <div class="next-button-div">
+                    <button id="next-page">Next Page</button>
+                </div>
+            </div>
+        </div>
+        <div class="tweet-analysis grid-child tweet-data hidden">
+            <div class="tweet-analysis-heading">
+                <b>Tweet Analytics</b>
+            </div>
+            <div id="home-charts-div">
+
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="tab-content" id="analysis-div" style="display: none;">
+    <div id="analysis-charts-div">
+    </div>
+</div>
+<script src="{{ url_for('static', filename='chart_config.js') }}"></script>
+<script src="{{ url_for('static', filename='home_charts.js') }}"></script>
+<script src="{{ url_for('static', filename='analysis_page_charts.js') }}"></script>
+<script src="{{ url_for('static', filename='search_engine.js') }}"></script>
+</body>
+
+</html>
